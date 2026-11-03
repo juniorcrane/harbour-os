@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cpgubv31eovch"]
+
+[ext_resource type="Script" uid="uid://cy11ftflnfhcy" path="res://Assets/Intro.cs" id="1_7nqml"]
+[ext_resource type="Texture2D" uid="uid://dew77cbl4f1mu" path="res://Assets/Harbour Logo Big OnBlack.png" id="1_xo182"]
+[ext_resource type="AudioStream" uid="uid://cfwwio0y5ujd8" path="res://Assets/startup.ogg" id="3_ulbd2"]
+[ext_resource type="AudioStream" uid="uid://db2qggmtr1j0n" path="res://Assets/startuploop.ogg" id="4_vjsie"]
+
+[node name="Intro" type="Control" unique_id=1777371817]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7nqml")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=373991523]
+texture_filter = 2
+position = Vector2(959.99994, 512)
+scale = Vector2(0.565, 0.565)
+texture = ExtResource("1_xo182")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=599244102]
+layout_mode = 0
+offset_top = 870.0
+offset_right = 1920.0
+offset_bottom = 1041.0
+theme_override_font_sizes/normal_font_size = 36
+text = "Itch.io retriever found!
+Itch.io launcher found!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Start" type="AudioStreamPlayer" parent="." unique_id=1658593445]
+stream = ExtResource("3_ulbd2")
+volume_db = -10.0
+autoplay = true
+
+[node name="Loop" type="AudioStreamPlayer" parent="." unique_id=183125048]
+stream = ExtResource("4_vjsie")
+volume_db = -10.0
+
+[connection signal="finished" from="Start" to="." method="_on_start_finished"]
