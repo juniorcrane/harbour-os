@@ -1,6 +1,6 @@
 # HarbourOS
 
-Work-in-progress OS for a brand-new console in development. Build with Godot and drop files in /Build (or move files in /Build to the root of the built project).
+Work-in-progress OS for a brand-new console in development. Build with Godot Mono 4.7.2 and drop files in /Build (or move files in /Build to the root of the built project).
 
 Done:
 
