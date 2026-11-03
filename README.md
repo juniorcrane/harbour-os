@@ -13,6 +13,7 @@ To-Do:
 2. Add GUI metadata fetch for games on Itch.io
 3. Add actual UX design.
 4. Add support for games on Newgrounds
-5. Add support for games with just a link to the page.
+5. Add support for Harbour-served games. (Making it easy to launch games off these platforms like Krunker or to develop for the console specifically)
+6. Add support for games with just a link to the page.
 
 Slight AI was used in this project just to search for commands (I'm new to C++ but I'm an experienced programmer in general). All logic was done by me.
